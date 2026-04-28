@@ -3,9 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AEGIS-9 | あなただけの運命の設計図を、最高精度の天体データから</title>
-    <meta name="description" content="科学的な精密さと、魂への深い洞察。aegis-9エンジンによる超高精度な個人鑑定書『プレミアム・アストロ・レポート』。">
+    <title>AEGIS-9 鑑定室｜本質と才能を前向きに読み解くPDF鑑定書</title>
+    <meta name="description" content="西洋占星術・四柱推命・マヤ暦を組み合わせたPDF鑑定書。生年月日・出生時間・出生地をもとに、自分の本質・才能・人生の流れを前向きに読み解きます。">
     
+    <!-- OGP -->
+    <meta property="og:title" content="AEGIS-9 鑑定室｜本質と才能を前向きに読み解くPDF鑑定書">
+    <meta property="og:description" content="西洋占星術・四柱推命・マヤ暦を組み合わせたPDF鑑定書。自分の本質・才能・人生の流れを前向きに読み解きます。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aegis-09.amberlight.co.jp/">
+    <meta property="og:image" content="https://aegis-09.amberlight.co.jp/ogp.png">
+    <meta name="twitter:card" content="summary_large_image">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=JetBrains+Mono:wght@300;500&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
     
@@ -38,8 +45,9 @@
                 <span class="badge">PDF Personal Reading</span>
                 <h1>あなたの本質と才能を、<br><span class="gradient-text">前向きに読み解く鑑定書</span></h1>
                 <p>生年月日・出生時間・出生地から導き出したデータをもとに、<br>西洋占星術・四柱推命・マヤ暦を組み合わせて、<br>あなたの性質・才能・人生の流れを丁寧に読み解きます。</p>
-                <div class="hero-btns">
+                <div class="hero-btns" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
                     <a href="#pricing" class="btn-primary">鑑定メニューを見る</a>
+                    <a href="#faq" class="btn-outline">よくある質問を見る</a>
                 </div>
             </div>
             <div class="hero-visual fade-in">
@@ -145,27 +153,27 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>ミニ鑑定</td>
+                                <td>ミニ鑑定<br><span class="menu-label">初めての方におすすめ</span></td>
                                 <td class="strike">¥2,980</td>
                                 <td class="highlight">¥1,980</td>
                             </tr>
                             <tr>
-                                <td>相性鑑定</td>
+                                <td>相性鑑定<br><span class="menu-label">関係性を見たい方へ</span></td>
                                 <td class="strike">¥4,800</td>
                                 <td class="highlight">¥3,980</td>
                             </tr>
                             <tr>
-                                <td>天職鑑定</td>
+                                <td>天職鑑定<br><span class="menu-label">人気No.1／迷ったらこちら</span></td>
                                 <td class="strike">¥6,800</td>
                                 <td class="highlight">¥5,800</td>
                             </tr>
                             <tr>
-                                <td>宿命鑑定</td>
+                                <td>宿命鑑定<br><span class="menu-label">本格鑑定</span></td>
                                 <td class="strike">¥12,800</td>
                                 <td class="highlight">¥9,800</td>
                             </tr>
                             <tr>
-                                <td>10年運気表</td>
+                                <td>10年運気表<br><span class="menu-label">未来設計</span></td>
                                 <td class="strike">¥8,800</td>
                                 <td class="highlight">¥6,800</td>
                             </tr>
@@ -173,9 +181,31 @@
                     </table>
                 </div>
                 
+                <!-- Comparison Guide -->
+                <div class="comparison-guide fade-in">
+                    <h3 class="text-center" style="margin-bottom: 2rem; color: var(--accent-cyan); font-size: 1.5rem;">どの鑑定を選べばいい？</h3>
+                    <div class="comparison-table-wrapper">
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>迷ったら</th>
+                                    <th>おすすめ</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>まず試したい</td><td><a href="#mini" class="text-cyan">ミニ鑑定 &rarr;</a></td></tr>
+                                <tr><td>パートナーや親子関係を見たい</td><td><a href="#compatibility" class="text-cyan">相性鑑定 &rarr;</a></td></tr>
+                                <tr><td>仕事・転職・起業を考えたい</td><td><a href="#career" class="text-cyan">天職鑑定 &rarr;</a></td></tr>
+                                <tr><td>自分を深く知りたい</td><td><a href="#destiny" class="text-cyan">宿命鑑定 &rarr;</a></td></tr>
+                                <tr><td>これからの流れを知りたい</td><td><a href="#10years" class="text-cyan">10年運気表 &rarr;</a></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
                 <div class="menu-details-list">
                     <!-- ミニ鑑定 -->
-                    <div class="menu-detail-card">
+                    <div id="mini" class="menu-detail-card">
                         <div class="menu-card-image-wrapper">
                             <img src="mini.jpg" alt="ミニ鑑定" class="menu-card-image">
                         </div>
@@ -226,7 +256,7 @@
                 </div>
 
                     <!-- 相性鑑定 -->
-                    <div class="menu-detail-card">
+                    <div id="compatibility" class="menu-detail-card">
                         <div class="menu-card-image-wrapper">
                             <img src="aishou.jpg" alt="相性鑑定" class="menu-card-image">
                         </div>
@@ -276,7 +306,7 @@
                 </div>
 
                     <!-- 天職鑑定 -->
-                    <div class="menu-detail-card">
+                    <div id="career" class="menu-detail-card">
                         <div class="menu-card-image-wrapper">
                             <img src="tenshoku.jpg" alt="天職鑑定" class="menu-card-image">
                         </div>
@@ -330,7 +360,7 @@
                 </div>
 
                     <!-- 宿命鑑定 -->
-                    <div class="menu-detail-card">
+                    <div id="destiny" class="menu-detail-card">
                         <div class="menu-card-image-wrapper">
                             <img src="shukumei.jpg" alt="宿命鑑定" class="menu-card-image">
                         </div>
@@ -386,7 +416,7 @@
                 </div>
 
                     <!-- 10年運気表 -->
-                    <div class="menu-detail-card">
+                    <div id="10years" class="menu-detail-card">
                         <div class="menu-card-image-wrapper">
                             <img src="10years.jpg" alt="10年運気表" class="menu-card-image">
                         </div>
@@ -442,6 +472,50 @@
                         お申込み前に、必ず「<a href="legal.html" style="color: var(--accent-cyan); text-decoration: underline;">特定商取引法に基づく表記</a>」および「<a href="privacy.html" style="color: var(--accent-cyan); text-decoration: underline;">プライバシーポリシー</a>」をご確認ください。<br>
                         決済完了後のお客様都合によるキャンセル・返金は、原則としてお受けできません。
                     </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Flow Section -->
+        <section id="flow" class="flow section">
+            <div class="container">
+                <h2 class="section-title text-center">お申込みの流れ</h2>
+                <div class="flow-container fade-in">
+                    <div class="flow-step">
+                        <div class="flow-number">1</div>
+                        <div class="flow-content">
+                            <h3>鑑定メニューを選ぶ</h3>
+                            <p>本ページよりご希望の鑑定メニューをお選びください。</p>
+                        </div>
+                    </div>
+                    <div class="flow-step">
+                        <div class="flow-number">2</div>
+                        <div class="flow-content">
+                            <h3>Squareで決済</h3>
+                            <p>クレジットカードにて安全に決済いただけます。</p>
+                        </div>
+                    </div>
+                    <div class="flow-step">
+                        <div class="flow-number">3</div>
+                        <div class="flow-content">
+                            <h3>Googleフォームに入力</h3>
+                            <p>決済完了後、生年月日等の必要情報をご入力ください。</p>
+                        </div>
+                    </div>
+                    <div class="flow-step">
+                        <div class="flow-number">4</div>
+                        <div class="flow-content">
+                            <h3>鑑定書を作成</h3>
+                            <p>いただいた情報をもとに、お一人おひとりの鑑定書を丁寧に作成します。</p>
+                        </div>
+                    </div>
+                    <div class="flow-step">
+                        <div class="flow-number">5</div>
+                        <div class="flow-content">
+                            <h3>PDFで納品</h3>
+                            <p>通常7営業日以内に、ご指定のメールアドレスへお届けします。</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -552,6 +626,7 @@
                 <h2>鑑定メニューを選んで、お申し込みください</h2>
                 <p>各メニューの申込ボタンより決済ページへお進みください。<br>決済完了後、鑑定に必要な情報をご入力いただくGoogleフォームをご案内します。</p>
                 <div class="cta-btns">
+                    <p style="font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.8;">どのメニューを選べばよいか迷う方は、公式LINEよりお気軽にご相談ください。<br>無理なご案内はいたしませんので、ご自身に合う鑑定を一緒に確認できます。</p>
                     <a href="https://lin.ee/UNWgRnf" class="btn-line">
                         <img src="line-logo.png" alt="LINE" style="width: 24px; height: 24px; object-fit: contain; flex-shrink: 0;">
                         公式LINEで事前相談する

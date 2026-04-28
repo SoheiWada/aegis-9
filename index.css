@@ -363,6 +363,66 @@ h1, h2, h3 {
     border-bottom: none;
 }
 
+/* Pricing Table Labels */
+.menu-label {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--accent-gold);
+    margin-top: 0.4rem;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+
+/* Comparison Guide */
+.comparison-guide {
+    max-width: 600px;
+    margin: 3rem auto 4rem;
+    background: rgba(0,0,0,0.3);
+    border: 1px solid var(--glass-border);
+    border-radius: 1.5rem;
+    padding: 3rem;
+}
+
+.comparison-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.comparison-table th, .comparison-table td {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    text-align: left;
+}
+
+.comparison-table th {
+    color: var(--text-secondary);
+    font-weight: normal;
+    font-size: 0.9rem;
+}
+
+.comparison-table td:last-child {
+    font-weight: bold;
+    text-align: right;
+}
+
+.text-cyan {
+    color: var(--accent-cyan) !important;
+    text-decoration: none;
+    transition: var(--transition);
+    display: inline-block;
+}
+
+.text-cyan:hover {
+    color: var(--accent-gold) !important;
+    text-shadow: 0 0 10px rgba(0, 210, 255, 0.5);
+    transform: translateX(3px);
+}
+
 /* Menu Details Section */
 .menu-details-list {
     margin-top: 5rem;
@@ -566,6 +626,61 @@ h1, h2, h3 {
 }
 
 /* FAQ Section */
+/* Flow Section */
+.flow-container {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.flow-step {
+    display: flex;
+    align-items: center;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid var(--glass-border);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    position: relative;
+    transition: var(--transition);
+}
+
+.flow-step:hover {
+    background: rgba(255,255,255,0.05);
+    border-color: var(--accent-gold);
+    transform: translateX(5px);
+}
+
+.flow-number {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--accent-gold), #ffaa00);
+    color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    margin-right: 1.5rem;
+    box-shadow: 0 4px 10px rgba(255, 170, 0, 0.2);
+}
+
+.flow-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+    color: var(--text-primary);
+}
+
+.flow-content p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin: 0;
+    line-height: 1.6;
+}
+
 .faq-container {
     max-width: 800px;
     margin: 4rem auto 0;
