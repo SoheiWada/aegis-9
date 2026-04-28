@@ -37,6 +37,11 @@
     <nav class="nav-bar">
         <div class="container nav-content">
             <a href="index.html" class="logo">AEGIS-9</a>
+            <div class="menu-toggle" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <ul class="nav-links">
                 <li><a href="index.html#about">The Report</a></li>
                 <li><a href="index.html#pricing">Menu</a></li>
@@ -85,11 +90,7 @@
                 </p>
 
                 <h2>販売URL</h2>
-                <p><a href="index.html" style="color: var(--accent-cyan);" id="site-url">https://販売サイトのURL</a></p>
-                <script>
-                    document.getElementById('site-url').textContent = window.location.origin + window.location.pathname.replace('legal.html', 'index.html');
-                    document.getElementById('site-url').href = window.location.origin + window.location.pathname.replace('legal.html', 'index.html');
-                </script>
+                <p><a href="https://aegis-09.amberlight.co.jp/" style="color: var(--accent-cyan);">https://aegis-09.amberlight.co.jp/</a></p>
 
                 <h2>販売価格</h2>
                 <p>各鑑定メニューの販売価格は、LPおよび申込ページに表示された金額とします。<br>
@@ -189,11 +190,7 @@
                 <p>取得した個人情報を、法令に基づく場合を除き、お客様の同意なく第三者に提供することはありません。</p>
                 <p>詳細は、プライバシーポリシーをご確認ください。</p>
                 <p>プライバシーポリシー：<br>
-                <a href="privacy.html" style="color: var(--accent-cyan);" id="privacy-url">https://販売サイトのURL/privacy.html</a></p>
-                <script>
-                    document.getElementById('privacy-url').textContent = window.location.origin + window.location.pathname.replace('legal.html', 'privacy.html');
-                    document.getElementById('privacy-url').href = window.location.origin + window.location.pathname.replace('legal.html', 'privacy.html');
-                </script>
+                <a href="https://aegis-09.amberlight.co.jp/privacy.html" style="color: var(--accent-cyan);">https://aegis-09.amberlight.co.jp/privacy.html</a></p>
             </div>
         </section>
     </main>
@@ -216,5 +213,6 @@
             </div>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
