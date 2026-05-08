@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aegis-09.amberlight.co.jp/sitemap.xml
